@@ -10,7 +10,7 @@
 # Running Server properties
 server:
   address: # bind address
-  port: 8001  # port must be unique for each deployed Module in the same environment
+  port: 8041  # port must be unique for each deployed Module in the same environment
   servlet:
     context-path: /@project.name@
   error:
@@ -28,9 +28,9 @@ spring:
     initialization-mode: always
     schema: classpath:/schema.sql
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/devdb
+    url: jdbc:postgresql://localhost:5432/pub
     username: postgres
-    password: postgres
+    password: admin
     hikari:
         connection-timeout: 20000
         maximum-pool-size: 10
